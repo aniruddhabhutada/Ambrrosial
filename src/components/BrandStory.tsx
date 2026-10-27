@@ -86,7 +86,7 @@ export const BrandStory: React.FC = () => {
         <div className="bg-[#eeebe6] border border-[#e3dfd8] rounded-2xl p-6 sm:p-10 flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2 rounded-xl overflow-hidden aspect-[4/3] bg-white">
             <img
-              src="/assets/products/mystical-lavender-duo.jpg"
+              src="/assets/products/mystical-lavender-duo.webp"
               alt="Ambrrosial Essence signature flacons"
               className="w-full h-full object-cover"
               loading="lazy"

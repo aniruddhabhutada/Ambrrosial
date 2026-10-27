@@ -10,12 +10,12 @@ export const BRAND_CONFIG = {
   announcementText: 'Curated Luxury Fragrances • Visit Our Boutique or Inquire Online for Scent Consultation',
   googleMapsUrl: 'https://maps.app.goo.gl/73XdMpMmq2bEa4np9',
   logos: {
-    dark: '/assets/logo/ae-logo-dark.jpg',
-    light: '/assets/logo/ae-logo-light.jpg',
+    dark: '/assets/logo/ae-logo-dark.webp',
+    light: '/assets/logo/ae-logo-light.webp',
     squareDark: '/assets/logo/logo (1).jpg',
     squareLight: '/assets/logo/logo (2).jpg',
   },
-  heroImage: '/assets/hero/hero-desert-perfume.jpg',
+  heroImage: '/assets/hero/hero-desert-perfume.webp',
   navItems: [
     { label: 'Collection', href: '#collection' },
     { label: 'Notes Story', href: '#notes-story' },

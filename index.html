@@ -11,24 +11,31 @@
     <meta name="author" content="Ambrrosial Essence" />
     <meta name="theme-color" content="#121110" />
 
+    <!-- Performance: DNS Prefetch & Preconnect for CDN / Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Performance: Preload Critical Hero Image in WebP for Instant LCP -->
+    <link rel="preload" as="image" href="/assets/hero/hero-desert-perfume.webp" type="image/webp" fetchpriority="high" />
+
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Ambrrosial Essence — Luxury Fragrance House" />
     <meta property="og:description" content="A fragrance that feels unmistakably yours. Explore an editorial curation of distinctive luxury perfumes." />
-    <meta property="og:image" content="/assets/logo/ae-logo-dark.jpg" />
+    <meta property="og:image" content="/assets/logo/ae-logo-dark.webp" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="Ambrrosial Essence — Luxury Fragrance House" />
     <meta property="twitter:description" content="Discover fragrances that express your mood and leave an unforgettable impression." />
-    <meta property="twitter:image" content="/assets/logo/ae-logo-dark.jpg" />
+    <meta property="twitter:image" content="/assets/logo/ae-logo-dark.webp" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="/assets/logo/ae-logo-dark.jpg" />
-    <link rel="apple-touch-icon" href="/assets/logo/ae-logo-dark.jpg" />
+    <link rel="icon" type="image/webp" href="/assets/logo/ae-logo-dark.webp" />
+    <link rel="apple-touch-icon" href="/assets/logo/ae-logo-dark.webp" />
 
-    <!-- Google Fonts: Cormorant Garamond (Haute Serif), Host Grotesk (Modern Sans), IBM Plex Mono (Laboratory Accords) & Cinzel -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <!-- High-Performance Optimized Google Fonts: Streamlined weights with swap display -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Host+Grotesk:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-white text-[#121110] font-sans antialiased selection:bg-[#eeebe6] selection:text-[#121110] min-h-screen">
     <div id="root"></div>

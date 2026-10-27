@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
               {/* Master Atmospheric Flacon Photograph */}
               <div className="aspect-[4/3.6] rounded-xl overflow-hidden bg-stone-100 relative">
                 <img
-                  src="/assets/hero/hero-desert-perfume.jpg"
+                  src="/assets/hero/hero-desert-perfume.webp"
                   alt="Ambrrosial Essence signature perfume flacon on travertine limestone at dawn in the desert"
                   className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   loading="eager"

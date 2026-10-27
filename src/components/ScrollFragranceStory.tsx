@@ -174,7 +174,7 @@ export const ScrollFragranceStory: React.FC = () => {
 
               <div className="aspect-[4/5] rounded-xl overflow-hidden bg-white relative">
                 <img
-                  src={featuredProduct.primaryImage || '/assets/products/mystical-lavender-duo.jpg'}
+                  src={featuredProduct.primaryImage || '/assets/products/mystical-lavender-duo.webp'}
                   alt="Mystical Lavendar flacon on marble"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
