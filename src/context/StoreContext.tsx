@@ -30,6 +30,8 @@ interface StoreContextType {
   setIsBagOpen: (open: boolean) => void;
   setIsWishlistOpen: (open: boolean) => void;
   setIsSearchOpen: (open: boolean) => void;
+  isMobileMenuOpen: boolean;
+  setIsMobileMenuOpen: (open: boolean) => void;
   setSearchQuery: (query: string) => void;
   setSelectedCategory: (cat: string) => void;
   setActiveProductModal: (product: Product | null) => void;
@@ -66,6 +68,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [isBagOpen, setIsBagOpen] = useState(false);
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeProductModal, setActiveProductModal] = useState<Product | null>(null);
@@ -209,6 +212,8 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         isBagOpen,
         isWishlistOpen,
         isSearchOpen,
+        isMobileMenuOpen,
+        setIsMobileMenuOpen,
         searchQuery,
         selectedCategory,
         activeProductModal,

@@ -1,7 +1,9 @@
 import React from 'react';
 import { ArrowRight, Compass, Check, MessageCircle } from 'lucide-react';
+import { useStore } from '../context/StoreContext';
 
 export const Hero: React.FC = () => {
+  const { isMobileMenuOpen } = useStore();
   return (
     <section 
       aria-label="Ambrrosial Essence Hero Campaign"
@@ -128,7 +130,7 @@ export const Hero: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Order on WhatsApp"
-        className="fixed bottom-5 right-5 z-30 inline-flex items-center justify-center p-3 sm:px-5 sm:py-3 bg-[#121110] hover:bg-[#2a2624] text-white text-xs font-mono uppercase tracking-wider rounded-full shadow-2xl border border-white/15 transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25d366]"
+        className={`fixed bottom-5 right-5 z-30 ${isMobileMenuOpen ? "hidden" : "inline-flex"} items-center justify-center p-3 sm:px-5 sm:py-3 bg-[#121110] hover:bg-[#2a2624] text-white text-xs font-mono uppercase tracking-wider rounded-full shadow-2xl border border-white/15 transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25d366]`}
       >
         <MessageCircle className="w-5 h-5 sm:w-4 sm:h-4 text-[#25d366] shrink-0" />
         <span className="hidden sm:inline sm:ml-2.5">Order on WhatsApp</span>

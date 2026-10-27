@@ -19,6 +19,7 @@ import { ShoppingBagDrawer } from './components/ShoppingBagDrawer';
 import { WishlistDrawer } from './components/WishlistDrawer';
 import { SearchModal } from './components/SearchModal';
 import { AssetAuditModal } from './components/AssetAuditModal';
+import { MobileMenuDrawer } from './components/MobileMenuDrawer';
 
 export const AppContent: React.FC = () => {
   const { currentView, navigateTo } = useStore();
@@ -78,6 +79,7 @@ export const AppContent: React.FC = () => {
       <WishlistDrawer />
       <SearchModal />
       <AssetAuditModal />
+      <MobileMenuDrawer />
     </div>
   );
 };
