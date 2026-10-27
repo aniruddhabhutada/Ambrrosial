@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-ivory: #F7F3EC;
+    --color-ivory-light: #FBF9F5;
+    --color-champagne: #E7D5B5;
+    --color-espresso: #241A17;
+    --color-espresso-dark: #16110F;
+    --color-bronze: #9A7655;
+    --color-charcoal: #625A53;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-espresso);
+    overflow-x: hidden;
+  }
+
+  /* Custom focus rings for accessibility */
+  *:focus-visible {
+    outline: 2px solid #C5A880;
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .tracking-luxury {
+    letter-spacing: 0.18em;
+  }
+  .tracking-wide-luxury {
+    letter-spacing: 0.28em;
+  }
+}
+
+/* Subtle image zoom on hover for luxury product cards */
+.luxury-image-zoom {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover .luxury-image-zoom {
+  transform: scale(1.04);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6C097;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9A7655;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
